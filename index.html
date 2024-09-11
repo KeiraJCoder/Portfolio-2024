@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keira Jarvis Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slider.css">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Floating Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://github.com/KeiraJCoder" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/keirajcoder/" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <img class="image" src="profile.jpg" alt="An image of Keira">
+            <h1>Keira Jarvis</h1>
+            <p>Software Developer & Instructor</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Hi, I'm Keira Jarvis, a dedicated software developer and instructor with a passion for creating innovative web applications and empowering others to excel in technology. 
+                With expertise in front-end and back-end development, I specialise in building intuitive, user-friendly websites and applications that blend creativity with robust technical functionality. 
+            </p>
+            <p>
+                My portfolio reflects a strong foundation in technologies like HTML, CSS, JavaScript, React, Node.js, and API integrations, with a growing focus on security and best practices in development. 
+            </p>
+            <p>
+                My recent recognition includes being shortlisted for the <strong><a href="https://www.grcworldforums.com/categories/tech-diversity-equity-and-inclusion-advocate-of-the-year/7385.article" target="_blank">Tech Diversity, Equity, and Inclusion Advocate of the Year 2023</a></strong> award for my role as an Equality, Diversity, and Inclusion Champion at Code Nation. 
+            </p>
+            <p>
+                When I'm not coding or teaching, you’ll find me exploring new technologies, contributing to open-source projects, or expanding my knowledge in cybersecurity.
+            </p>
+            <p>
+                Let’s connect! You can view my projects on 
+                <a href="https://github.com/KeiraJCoder" target="_blank">GitHub</a> or reach out via <a href="https://www.linkedin.com/in/keirajcoder/" target="_blank">LinkedIn</a>.
+            </p>
+            <a href="CV.pdf" class="btn" target="_blank">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="h2">Skills</h2>
+        <div class="skills-container">
+            <!-- Skill 1 -->
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>Front-End Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <!-- Skill 2 -->
+            <div class="skill-card">
+                <i class="fas fa-server skill-icon"></i>
+                <h3>Back-End Development</h3>
+                <p>Node.js, Express, API Integration</p>
+            </div>
+            <!-- Skill 3 -->
+            <div class="skill-card">
+                <i class="fas fa-code-branch skill-icon"></i>
+                <h3>Version Control</h3>
+                <p>Git, GitHub, CI/CD</p>
+            </div>
+            <!-- Skill 4 -->
+            <div class="skill-card">
+                <i class="fas fa-tools skill-icon"></i>
+                <h3>Tools & Technologies</h3>
+                <p>VSCode, Docker, AWS</p>
+            </div>
+            <!-- Skill 5 -->
+            <div class="skill-card">
+                <i class="fas fa-chalkboard-teacher skill-icon"></i>
+                <h3>Instruction & Mentoring</h3>
+                <p>Teaching, Mentorship, Curriculum Design</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section with Swiper.js Carousel -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <a href="https://keirajcoder.github.io/DoctorWho-TopTrumps/" target="_blank" class="project-card project-card-1">
+                    <h3 class="project-title">Doctor Who Top Trumps</h3>
+                    <p class="project-description">Built with HTML, CSS, JavaScript - A web-based card game where players face off against Doctor Who aliens.</p>
+                </a>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <a href="https://keirajcoder.github.io/New_Pokedex/" target="_blank" class="project-card project-card-2">
+                    <h3 class="project-title">Pokedex</h3>
+                    <p class="project-description">Built with HTML, CSS, JavaScript, API integration - An interactive app displaying a list of Pokémon with their stats and details.</p>
+                </a>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <a href="https://keirajcoder.github.io/doctor-who-recommender/" target="_blank" class="project-card project-card-3">
+                    <h3 class="project-title">Doctor Who Episode Recommender</h3>
+                    <p class="project-description">Built with HTML, CSS, JavaScript - An interactive quiz that recommends a Doctor Who episode based on preferences.</p>
+                </a>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <a href="https://keirajcoder.github.io/cybersecuritywebsite/index.html" target="_blank" class="project-card project-card-4">
+                    <h3 class="project-title">Cybersecurity Website</h3>
+                    <p class="project-description">Built with HTML, CSS, JavaScript - An informative site on cybersecurity aimed at educating users.</p>
+                </a>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <a href="https://keirajcoder.github.io/virtualpet/" target="_blank" class="project-card project-card-5">
+                    <h3 class="project-title">Virtual Pet</h3>
+                    <p class="project-description">Built with HTML, CSS, JavaScript - An interactive app where users can create and care for a virtual pet.</p>
+                </a>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+                <a href="https://keirajcoder.github.io/Festpod/" target="_blank" class="project-card project-card-6">
+                    <h3 class="project-title">Festpod</h3>
+                    <p class="project-description">Built with HTML, CSS, JavaScript - A podcast website for Festpod.</p>
+                </a>
+            </div>
+        </div>
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mnnayngl" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 Keira Jarvis</p>
+    </footer>
+
+    <!-- Swiper.js script -->    
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
