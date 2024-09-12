@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function initSwiper() {
         const screenWidth = window.innerWidth;
 
+        // Only initialize Swiper with autoplay for screens larger than 768px
         if (screenWidth > 768) {
             swiper = new Swiper('.swiper-container', {
                 slidesPerView: 3, // Display around 3 slides at a time
@@ -47,19 +48,37 @@ document.addEventListener('DOMContentLoaded', function() {
                     swiper.update();      // Reinitialize Swiper
                 }
             });
+        } else if (screenWidth <= 768) {
+            // Initialize Swiper without autoplay for mobile/tablet
+            swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1, // Adjust for mobile view
+                spaceBetween: 10, 
+                loop: true,
+                centeredSlides: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                grabCursor: true,
+                slideToClickedSlide: true,
+            });
         }
     }
 
     function destroySwiper() {
-        if (swiper && window.innerWidth <= 768) {
-            swiper.destroy(true, true);
+        if (swiper) {
+            swiper.destroy(true, true); // Properly destroy the swiper instance
             swiper = undefined;  // Clear swiper instance
         }
     }
 
     function handleResize() {
-        destroySwiper();  // Destroy if mobile
-        initSwiper();     // Initialize Swiper if width > 768
+        destroySwiper();  // Destroy current swiper instance
+        initSwiper();     // Reinitialize Swiper based on screen size
     }
 
     initSwiper();  // Initialize Swiper on page load

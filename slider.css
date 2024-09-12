@@ -72,7 +72,6 @@
 }
 
 /* Project Cards */
-/* Project Cards */
 .project-card {
     width: 250px; /* Ensure a consistent card width */
     color: white;
@@ -90,48 +89,21 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Persistent colors for each project card */
-.project-card-1 {
-    background-color: #ff6f61; /* Red */
-}
-
-.project-card-2 {
-    background-color: #6a1b9a; /* Purple */
-}
-
-.project-card-3 {
-    background-color: #00bcd4; /* Cyan */
-}
-
-.project-card-4 {
-    background-color: #f44336; /* Dark Red */
-}
-
-.project-card-5 {
-    background-color: purple; /* Purple */
-}
-
-.project-card-6 {
-    background-color: #4caf50; /* Green */
-}
-
-.project-card-7 {
-    background-color: #3498db; /* Blue */
-}
-
-.project-card-8 {
-    background-color: goldenrod; /* Gold */
-}
-
-.project-card-9 {
-    background-color: #2ecc71; /* Green */
-}
+.project-card-1 { background-color: #ff6f61; } /* Red */
+.project-card-2 { background-color: #6a1b9a; } /* Purple */
+.project-card-3 { background-color: #00bcd4; } /* Cyan */
+.project-card-4 { background-color: #f44336; } /* Dark Red */
+.project-card-5 { background-color: purple; } /* Purple */
+.project-card-6 { background-color: #4caf50; } /* Green */
+.project-card-7 { background-color: #3498db; } /* Blue */
+.project-card-8 { background-color: goldenrod; } /* Gold */
+.project-card-9 { background-color: #2ecc71; } /* Green */
 
 /* Title and Description Styling */
 .project-card .project-title,
@@ -169,8 +141,6 @@
 }
 
 /* Adjust the project-gif styling */
-/* Adjust the project-gif styling */
-/* Adjust the project-gif styling */
 .project-gif {
     position: inherit; /* Ensure the gif is displayed */
     margin: -20px; /* Center the gif horizontally */
@@ -180,8 +150,6 @@
     border-style: solid black;
     border-width: 2px;
 }
-
-
 
 /* Show the gif on hover */
 .swiper-slide:hover .project-gif {
