@@ -193,12 +193,45 @@ img.image {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    position: relative;
 }
 
 .skill-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* Add animation for skill icons */
+.skill-icon {
+    font-size: 3rem;
+    color: #61dafb;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    transform: rotate(360deg); /* Rotate the icon on hover */
+    color: #333; /* Change color on hover */
+}
+
+/* Skill Icon Animation */
+.skill-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.skill-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
 
 /* Contact Section */
 #contact {
