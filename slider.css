@@ -26,8 +26,9 @@
 /* Swiper Slide */
 .swiper-slide {
     display: flex;
+    flex-direction: column; /* Allow vertical stacking */
     padding: 30px;
-    padding-left:70px;
+    padding-left: 70px;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
@@ -112,11 +113,23 @@
 }
 
 .project-card-5 {
-    background-color: purple; /* Yellow */
+    background-color: purple; /* Purple */
 }
 
 .project-card-6 {
     background-color: #4caf50; /* Green */
+}
+
+.project-card-7 {
+    background-color: #3498db; /* Blue */
+}
+
+.project-card-8 {
+    background-color: goldenrod; /* Gold */
+}
+
+.project-card-9 {
+    background-color: #2ecc71; /* Green */
 }
 
 /* Title and Description Styling */
@@ -154,32 +167,56 @@
     visibility: hidden;
 }
 
+/* Adjust the project-gif styling */
+.project-gif {
+    display: none; /* Initially hide the gif */
+    margin: 0 auto; /* Center the gif horizontally */
+    max-width: 80%; /* Ensure gif fits within the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius:20px;
+    border-style:solid black;
+    border-width:2px;
+}
+
+/* Show the gif on hover */
+.swiper-slide:hover .project-gif {
+    display: block; /* Show the gif on hover */
+    margin-top: 10px; /* Add some spacing between card and gif */
+    margin-left:-20px;
+    max-width: 100%; /* Ensure gif fits within the card */
+}
+
 /* Responsive Styles */
 
-/* Mobile Devices */
+/* Mobile Devices (Disable Swiper.js) */
 @media (max-width: 768px) {
+    /* Disable the swiper functionality and show the projects as a list */
     .swiper-container {
-        width: 95%;
-        height: auto; /* Let the height adjust based on content */
+        height: auto; /* Remove fixed height */
+        overflow: visible;
+    }
+
+    .swiper-wrapper {
+        display: block; /* Stack the project cards vertically */
     }
 
     .swiper-slide {
-        padding: 20px; /* Reduce padding */
-    }
-
-    .project-card {
-        width: 200px;
-        height: auto; /* Auto height for better fit */
+        display: block;
         padding: 10px;
     }
 
+    /* Hide navigation arrows and pagination */
     .swiper-button-next,
-    .swiper-button-prev {
-        font-size: 20px; /* Reduce arrow size for smaller screens */
+    .swiper-button-prev,
+    .swiper-pagination {
+        display: none;
     }
 
-    .swiper-pagination {
-        bottom: -10px; /* Bring pagination dots closer on smaller screens */
+    /* Project card adjustments for mobile */
+    .project-card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 

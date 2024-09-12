@@ -20,7 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-  
+    // Stop autoplay on hover and resume when not hovering
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            swiper.autoplay.stop(); // Stop autoplay when mouse enters a card
+        });
+
+        card.addEventListener('mouseleave', () => {
+            swiper.autoplay.start(); // Resume autoplay when mouse leaves the card
+        });
+    });
 
     // Recreate Swiper loop on visibility change to prevent cards from disappearing
     document.addEventListener('visibilitychange', function() {
