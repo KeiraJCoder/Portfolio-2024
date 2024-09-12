@@ -7,7 +7,6 @@
 /* Swiper Carousel */
 .swiper-container {
     width: 80%;
-    max-width: 1200px;
     height: 400px; /* Adjust the height of the container */
     margin: 0 auto;
     padding: 37px 0;
@@ -20,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;
+    width: 100%;
 }
 
 /* Swiper Slide */
@@ -29,7 +28,7 @@
     flex-direction: column; /* Allow vertical stacking */
     padding: 30px;
     padding-left: 70px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -73,10 +72,11 @@
 }
 
 /* Project Cards */
+/* Project Cards */
 .project-card {
-    width: 250px;
+    width: 250px; /* Ensure a consistent card width */
     color: white;
-    height: 150px;
+    min-height: 150px; /* Ensure consistent height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,6 +89,7 @@
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .project-card:hover {
     transform: scale(1.05);
@@ -168,22 +169,26 @@
 }
 
 /* Adjust the project-gif styling */
+/* Adjust the project-gif styling */
+/* Adjust the project-gif styling */
 .project-gif {
-    display: none; /* Initially hide the gif */
-    margin: 0 auto; /* Center the gif horizontally */
+    position: inherit; /* Ensure the gif is displayed */
+    margin: -20px; /* Center the gif horizontally */
     max-width: 80%; /* Ensure gif fits within the card width */
     height: auto; /* Maintain aspect ratio */
-    border-radius:20px;
-    border-style:solid black;
-    border-width:2px;
+    border-radius: 20px;
+    border-style: solid black;
+    border-width: 2px;
 }
+
+
 
 /* Show the gif on hover */
 .swiper-slide:hover .project-gif {
-    display: block; /* Show the gif on hover */
-    margin-top: 10px; /* Add some spacing between card and gif */
-    margin-left:-20px;
+    display: flex; /* Show the gif on hover */
+    margin-top: 30px; /* Add some spacing between card and gif */
     max-width: 100%; /* Ensure gif fits within the card */
+    margin: -20 auto; /* Center the gif */
 }
 
 /* Responsive Styles */
@@ -192,6 +197,7 @@
 @media (max-width: 768px) {
     /* Disable the swiper functionality and show the projects as a list */
     .swiper-container {
+        width: 100%; /* Ensure swiper container takes full width */
         height: auto; /* Remove fixed height */
         overflow: visible;
     }
@@ -202,7 +208,8 @@
 
     .swiper-slide {
         display: block;
-        padding: 10px;
+        padding: 0; /* Remove padding on mobile */
+        width: 100%; /* Ensure slide takes full width */
     }
 
     /* Hide navigation arrows and pagination */
@@ -214,19 +221,13 @@
 
     /* Project card adjustments for mobile */
     .project-card {
-        width: 100%;
+        width: 90%; /* Adjust width to occupy more space */
         height: auto;
         margin-bottom: 20px;
-    }
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-    .swiper-container {
-        width: 90%;
+        padding: 10px; /* Adjust padding for mobile */
     }
 
-    .project-card {
-        width: 230px;
+    .project-gif {
+        max-width: 90%; /* Ensure gif fits within mobile width */
     }
 }
