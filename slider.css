@@ -26,7 +26,8 @@
 /* Swiper Slide */
 .swiper-slide {
     display: flex;
-    padding: 40px;
+    padding: 30px;
+    padding-left:70px;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
