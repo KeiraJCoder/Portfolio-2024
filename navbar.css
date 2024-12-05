@@ -112,3 +112,165 @@ nav ul li a:hover {
         z-index: 1999;
     }
 }
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Enable 3D effect */
+    position: relative;
+    cursor: pointer;
+}
+
+.project-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-inner {
+    transform: rotateY(180deg); /* Rotate on hover */
+}
+
+.project-front,
+.project-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-front {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.project-back {
+    background-color: #000;
+    transform: rotateY(180deg); /* Start rotated */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-back img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.project-back .click-to-open {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Project Titles and Descriptions */
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+}
+
+/* Color Styles for Cards */
+.project-card-1 .project-front {
+    background-color: #ff6f61; /* Red */
+    color: #fff;
+}
+
+.project-card-2 .project-front {
+    background-color: #6a1b9a; /* Purple */
+    color: #fff;
+}
+
+.project-card-3 .project-front {
+    background-color: #00bcd4; /* Cyan */
+    color: #fff;
+}
+
+.project-card-4 .project-front {
+    background-color: #f44336; /* Dark Red */
+    color: #fff;
+}
+
+.project-card-5 .project-front {
+    background-color: #8e44ad; /* Deep Purple */
+    color: #fff;
+}
+
+.project-card-6 .project-front {
+    background-color: #4caf50; /* Green */
+    color: #fff;
+}
+
+.project-card-7 .project-front {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+}
+
+.project-card-8 .project-front {
+    background-color: #e67e22; /* Orange */
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center-align the column */
+        gap: 20px; /* Add uniform spacing between cards */
+        padding: 10px; /* Add padding to the grid */
+    }
+
+    .project-card {
+        width: 100%; /* Set width relative to screen size */
+        max-width: 350px; /* Set a maximum width for consistency */
+        height: auto; /* Allow cards to adjust their height */
+        margin: 0 auto; /* Center the cards horizontally */
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
