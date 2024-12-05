@@ -1,86 +1,53 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let swiper;
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCards = document.querySelectorAll('.project-card');
 
-    function initSwiper() {
-        const screenWidth = window.innerWidth;
+    projectCards.forEach((card) => {
+        const link = card.dataset.link; // Get the link from data-link attribute
+        const projectInner = card.querySelector('.project-inner');
+        const isMobile = window.innerWidth <= 768; // Detect mobile screens
 
-        // Only initialize Swiper with autoplay for screens larger than 768px
-        if (screenWidth > 768) {
-            swiper = new Swiper('.swiper-container', {
-                slidesPerView: 3, // Display around 3 slides at a time
-                spaceBetween: 10,   // Space between slides
-                loop: true,         // Enable slide looping
-                centeredSlides: true, // Center the active slide
-                navigation: {
-                    nextEl: '.swiper-button-next', // Next button
-                    prevEl: '.swiper-button-prev', // Previous button
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true, // Make pagination clickable
-                },
-                grabCursor: true,           // Change cursor on hover
-                slideToClickedSlide: true,  // Click to navigate to a slide
-                autoplay: {
-                    delay: 3000, // Time between slide changes in milliseconds
-                    disableOnInteraction: false, // Continue autoplay after user interaction
-                },
+        if (!isMobile) {
+            // Desktop: Hover to flip, click to open
+            card.addEventListener('mouseenter', () => {
+                projectInner.style.transform = 'rotateY(180deg)'; // Flip on hover
             });
 
-            // Stop autoplay on hover and resume when not hovering
-            const projectCards = document.querySelectorAll('.project-card');
-            
-            projectCards.forEach(card => {
-                card.addEventListener('mouseenter', () => {
-                    swiper.autoplay.stop(); // Stop autoplay when mouse enters a card
-                });
-
-                card.addEventListener('mouseleave', () => {
-                    swiper.autoplay.start(); // Resume autoplay when mouse leaves the card
-                });
+            card.addEventListener('mouseleave', () => {
+                projectInner.style.transform = 'rotateY(0deg)'; // Flip back
             });
 
-            // Recreate Swiper loop on visibility change to prevent cards from disappearing
-            document.addEventListener('visibilitychange', function() {
-                if (document.visibilityState === 'visible') {
-                    swiper.loopDestroy(); // Destroy the current loop
-                    swiper.loopCreate();  // Recreate the loop to ensure slides reappear
-                    swiper.update();      // Reinitialize Swiper
+            card.addEventListener('click', () => {
+                const isBackVisible = projectInner.style.transform === 'rotateY(180deg)';
+                if (isBackVisible && link) {
+                    window.open(link, '_blank'); // Open the project in a new tab
                 }
             });
-        } else if (screenWidth <= 768) {
-            // Initialize Swiper without autoplay for mobile/tablet
-            swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1, // Adjust for mobile view
-                spaceBetween: 10, 
-                loop: true,
-                centeredSlides: true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                grabCursor: true,
-                slideToClickedSlide: true,
+        } else {
+            // Mobile: First click to flip, second click to open
+            card.addEventListener('click', () => {
+                const isFlipped = card.dataset.flipped === 'true';
+
+                if (isFlipped && link) {
+                    // Open the project on second click
+                    window.open(link, '_blank');
+                    card.dataset.flipped = 'false'; // Reset to original state
+                    projectInner.style.transform = 'rotateY(0deg)'; // Flip back to front
+                } else {
+                    // Flip the card on first click
+                    card.dataset.flipped = 'true';
+                    projectInner.style.transform = 'rotateY(180deg)';
+                }
             });
         }
-    }
+    });
 
-    function destroySwiper() {
-        if (swiper) {
-            swiper.destroy(true, true); // Properly destroy the swiper instance
-            swiper = undefined;  // Clear swiper instance
-        }
-    }
+    // Menu toggle functionality for smaller screens
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('nav ul');
 
-    function handleResize() {
-        destroySwiper();  // Destroy current swiper instance
-        initSwiper();     // Reinitialize Swiper based on screen size
+    if (menuToggle && menu) {
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
     }
-
-    initSwiper();  // Initialize Swiper on page load
-    window.addEventListener('resize', handleResize);  // Handle window resizing
 });

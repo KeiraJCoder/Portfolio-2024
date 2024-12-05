@@ -7,6 +7,7 @@
     <title>Keira Jarvis Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="navbar.css"
     <!-- Swiper.js styles -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -25,14 +26,21 @@
 
     <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="menu-container">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+            </button>
+            <ul class="menu mobile-hidden">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+    
+    
 
     <!-- Home Section -->
     <section id="home">
@@ -105,76 +113,141 @@
         </div>
     </section>
 
-    <!-- Projects Section with Swiper.js Carousel -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!-- Existing Slides -->
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/DoctorWho-TopTrumps/" target="_blank" class="project-card project-card-1">
-                        <h3 class="project-title">Doctor Who Top Trumps</h3>
-                        <p class="project-description">Built with HTML, CSS, JavaScript - A web-based card game where players face off against Doctor Who aliens.</p>
-                    </a>
-                    <img src="gifs/toptrumps.gif" alt="Doctor Who Top Trumps Preview" class="project-gif">
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card project-card-1" data-link="https://keirajcoder.github.io/DoctorWho-TopTrumps/" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">Doctor Who Top Trumps</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, JavaScript - A web-based card game where players face off against Doctor Who aliens.
+                    </p>
                 </div>
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/New_Pokedex/" target="_blank" class="project-card project-card-2">
-                        <h3 class="project-title">Pokedex</h3>
-                        <p class="project-description">Built with HTML, CSS, JavaScript, API integration - An interactive app displaying a list of Pokémon with their stats and details.</p>
-                    </a>
-                    <img src="gifs/pokedex.gif" alt="Pokedex Preview" class="project-gif">
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/doctor-who-recommender/" target="_blank" class="project-card project-card-3">
-                        <h3 class="project-title">Doctor Who Episode Recommender</h3>
-                        <p class="project-description">Built with HTML, CSS, JavaScript - An interactive quiz that recommends a Doctor Who episode based on preferences.</p>
-                    </a>
-                    <img src="gifs/DW.gif" alt="Doctor Who Episode Recommender Preview" class="project-gif">
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/cybersecuritywebsite/index.html" target="_blank" class="project-card project-card-4">
-                        <h3 class="project-title">Cybersecurity Website</h3>
-                        <p class="project-description">Built with HTML, CSS, JavaScript - A gamified Cybersecurity site aimed at educating users.</p>
-                    </a>
-                    <img src="gifs/Cyber.gif" alt="Cybersecurity Website Preview" class="project-gif">
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/virtualpet/" target="_blank" class="project-card project-card-5">
-                        <h3 class="project-title">Virtual Pet</h3>
-                        <p class="project-description">Built with HTML, CSS, JavaScript - An interactive app where users can create and care for a virtual pet.</p>
-                    </a>
-                    <img src="gifs/Cyberpet.gif" alt="Virtual Pet Preview" class="project-gif">
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/Festpod/" target="_blank" class="project-card project-card-6">
-                        <h3 class="project-title">Festpod</h3>
-                        <p class="project-description">Built with HTML, CSS, JavaScript - A podcast website for Festpod.</p>
-                    </a>
-                    <img src="gifs/Festpod.gif" alt="Festpod Preview" class="project-gif">
-                </div>
-                <!-- New Project Slides -->
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/Elvish-Translator/" target="_blank" class="project-card project-card-7">
-                        <h3 class="project-title">Elvish Translator</h3>
-                        <p class="project-description">Built with HTML, CSS, JavaScript, utilising API integration - A translation app for converting text into the Elvish language from Lord of the Rings.</p>
-                    </a>
-                    <img src="gifs/Elvish.gif" alt="Elvish Translator Preview" class="project-gif">
-                </div>
-                <div class="swiper-slide">
-                    <a href="https://keirajcoder.github.io/The-Gunslinger/index.html" target="_blank" class="project-card project-card-9">
-                        <h3 class="project-title">The Gunslinger</h3>
-                        <p class="project-description">Built with HTML, CSS animations, JavaScript - A tribute website for Stephen King's Dark Tower series, focusing on The Gunslinger.</p>
-                    </a>
-                    <img src="gifs/gunslinger.gif" alt="The Gunslinger Preview" class="project-gif">
+                <div class="project-back">
+                    <img src="gifs/toptrumps.gif" alt="Doctor Who Top Trumps Preview">
+                    <p class="click-to-open">Click to open</p>
                 </div>
             </div>
-            <!-- Swiper Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
-    </section>
+
+        <!-- Project 2 -->
+        <div class="project-card project-card-2" data-link="https://keirajcoder.github.io/New_Pokedex/" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">Pokedex</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, JavaScript, API integration - An interactive app displaying a list of Pokémon with their stats and details.
+                    </p>
+                </div>
+                <div class="project-back">
+                    <img src="gifs/pokedex.gif" alt="Pokedex Preview">
+                    <p class="click-to-open">Click to open</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card project-card-3" data-link="https://keirajcoder.github.io/doctor-who-recommender/" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">Doctor Who Recommender</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, JavaScript - An interactive quiz that recommends a Doctor Who episode based on preferences.
+                    </p>
+                </div>
+                <div class="project-back">
+                    <img src="gifs/DW.gif" alt="Doctor Who Episode Recommender Preview">
+                    <p class="click-to-open">Click to open</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card project-card-4" data-link="https://keirajcoder.github.io/cybersecuritywebsite/index.html" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">Cybersecurity Website</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, JavaScript - A gamified Cybersecurity site aimed at educating users.
+                    </p>
+                </div>
+                <div class="project-back">
+                    <img src="gifs/Cyber.gif" alt="Cybersecurity Website Preview">
+                    <p class="click-to-open">Click to open</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card project-card-5" data-link="https://keirajcoder.github.io/virtualpet/" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">Virtual Pet</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, JavaScript - An interactive app where users can create and care for a virtual pet.
+                    </p>
+                </div>
+                <div class="project-back">
+                    <img src="gifs/Cyberpet.gif" alt="Virtual Pet Preview">
+                    <p class="click-to-open">Click to open</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card project-card-6" data-link="https://keirajcoder.github.io/Festpod/" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">Festpod</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, JavaScript - A podcast website for Festpod.
+                    </p>
+                </div>
+                <div class="project-back">
+                    <img src="gifs/Festpod.gif" alt="Festpod Preview">
+                    <p class="click-to-open">Click to open</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card project-card-7" data-link="https://keirajcoder.github.io/Elvish-Translator/" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">Elvish Translator</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS, JavaScript, utilising API integration - A translation app for converting text into the Elvish language from Lord of the Rings.
+                    </p>
+                </div>
+                <div class="project-back">
+                    <img src="gifs/Elvish.gif" alt="Elvish Translator Preview">
+                    <p class="click-to-open">Click to open</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card project-card-8" data-link="https://keirajcoder.github.io/The-Gunslinger/index.html" data-flipped="false">
+            <div class="project-inner">
+                <div class="project-front">
+                    <h3 class="project-title">The Gunslinger</h3>
+                    <p class="project-description">
+                        Built with HTML, CSS animations, JavaScript - A tribute website for Stephen King's Dark Tower series, focusing on The Gunslinger.
+                    </p>
+                </div>
+                <div class="project-back">
+                    <img src="gifs/gunslinger.gif" alt="The Gunslinger Preview">
+                    <p class="click-to-open">Click to open</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -190,12 +263,13 @@
         </form>
     </section>
 
+
     <footer>
         <p>&copy; 2024 Keira Jarvis</p>
     </footer>
 
     <!-- Swiper.js script -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>
