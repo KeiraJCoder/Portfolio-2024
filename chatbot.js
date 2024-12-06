@@ -186,6 +186,11 @@ const faqKeywords = [
         keywords: ["life philosophy", "values", "beliefs"],
         answer: "I value kindness, continuous learning, and creating opportunities for others to succeed in their journeys."
     }
+    ,
+    {
+        keywords: ["specialisation", "specialty", "focus", "specialization", "specialize"],
+        answer: "I am predominantly a front-end developer, that is where my passion lies, but can do some back-end development"
+    }
 ];
 
 //====================================================================================================
