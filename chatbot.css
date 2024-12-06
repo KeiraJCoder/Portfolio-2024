@@ -1,0 +1,231 @@
+/* Chatbot container */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px; /* Increased width for desktops */
+    height: 600px; /* Adjusted height */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+    z-index: 9999; /* Ensure it's above all other elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+#chatbot h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#chatbot p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Response section */
+#response {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+#hint {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+
+/* Options buttons */
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#options button {
+    flex: 1 1 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#options button:hover {
+    background-color: #0056b3;
+}
+
+/* Input section */
+#input-container {
+    display: flex;
+    gap: 20px;
+
+    
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #218838;
+}
+
+/* Open Chatbot button */
+#open-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#open-chatbot:hover {
+    background-color: #0056b3;
+}
+
+/* Close button */
+#minimize-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #666;
+}
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    #chatbot {
+        width: 90%; /* Adjust width to fit smaller screens */
+        height: 80%; /* Adjust height */
+        bottom: 10px;
+        right: 5%;
+    }
+    #open-chatbot {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        display: block; /* Ensure it displays */
+        z-index: 10000; /* Ensure it's above other elements */
+    }
+
+    #response {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    #options {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 5px; /* Smaller gap between buttons */
+    }
+
+    #options button {
+        flex: 1 1 100%; /* Make buttons full-width */
+        padding: 8px; /* Reduce padding */
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+
+    #input-container {
+        flex-direction: column; /* Stack input and button */
+        gap: 5px; /* Smaller gap */
+
+    }
+
+    #user-input {
+        width: 100%; /* Full-width input */
+        font-size: 0.9rem;
+    }
+
+    #submit-button {
+        width: 100%; /* Full-width button */
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #chatbot {
+        width: 100%; /* Full width for very small devices */
+        height: 90%; /* Maximize height */
+        bottom: 0;
+        right: 0;
+        border-radius: 0; /* Remove border radius for edge-to-edge look */
+    }
+    #open-chatbot {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 90px; /* Adjust size for small screens */
+        height: 40px; /* Adjust height for smaller screens */
+        font-size: 0.8rem; /* Smaller font size */
+        display: block; /* Ensure it displays */
+        z-index: 10000;
+    }
+
+    #response {
+        font-size: 0.8rem; /* Smaller font size for extra small screens */
+    }
+
+    #options button {
+        font-size: 0.8rem; /* Adjust button font size */
+        padding: 6px; /* Adjust padding */
+    }
+
+    #user-input,
+    #submit-button {
+        font-size: 0.8rem; /* Adjust input and button font size */
+    }
+}
