@@ -14,6 +14,7 @@
     display: none; /* Initially hidden */
     z-index: 9999; /* Ensure it's above all other elements */
     display: flex;
+    justify-content: ;
     flex-direction: column;
 }
 
@@ -194,6 +195,60 @@
         font-size: 0.9rem;
     }
 
+}
+
+/* Form container */
+#email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto; /* Center form horizontally */
+    width: 100%; /* Take full width of the container */
+}
+
+/* Input fields */
+#email-form input,
+#email-form textarea {
+    width: 90%; /* Full width with some padding */
+    max-width: 300px; /* Limit the max width */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+#email-form textarea {
+    height: 100px; /* Consistent height */
+    resize: none; /* Disable resizing */
+}
+
+/* Submit button */
+#email-form button {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#email-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Message above the form */
+#response p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 480px) {

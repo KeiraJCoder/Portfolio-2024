@@ -194,11 +194,18 @@ const faqKeywords = [
     {
         keywords: ["life philosophy", "values", "beliefs"],
         answer: "I value kindness, continuous learning, and creating opportunities for others to succeed in their journeys."
-    }
-    ,
+    },
     {
         keywords: ["specialisation", "specialty", "focus", "specialization", "specialize"],
         answer: "I am predominantly a front-end developer, that is where my passion lies, but can do some back-end development"
+    },
+    {
+        keywords: ["frankie", "relationship", "wife", "family", "love", "Frankie"],
+        answer: "My nearly-wife is called Frankie, we have been together since 2016. She also works in industry, but as a software tester! We have a fur son called Sammy and too many cats"
+    },
+    {
+        keywords: ["author", "memoirs", "vampyr", "daughter", "vampyrs", "published"],
+        answer: "I have written a trilogy of books called Memoirs of a Vampyr's Daughter. Find it on all leading book store websites"
     }
 ];
 
@@ -336,12 +343,13 @@ function handleOtherQuestions() {
     generateEmailForm(""); // Display email form for "Other Questions" button
 }
 
-// Function to toggle chatbot visibility
+// Function to toggle chatbot visibility (keeps original functionality)
 function toggleChatbot() {
     const chatbot = document.getElementById('chatbot');
     const openChatbotButton = document.getElementById('open-chatbot');
 
     if (chatbot.style.display === 'none' || chatbot.style.display === '') {
+        resetOnOpenChatbot(); // Reset when opening chatbot
         chatbot.style.display = 'block'; // Show chatbot
         openChatbotButton.style.display = 'none'; // Hide "Chat with Me" button
     } else {
@@ -350,6 +358,7 @@ function toggleChatbot() {
         resetChatbot(); // Reset fields when closed
     }
 }
+
 
 // Function to reset chatbot fields
 function resetChatbot() {
@@ -383,3 +392,94 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('open-chatbot').addEventListener('click', toggleChatbot);
     document.getElementById('minimize-button').addEventListener('click', toggleChatbot);
 });
+
+
+//====================================================================================================
+
+// Function to reset the chatbot to its idle state on page load
+function resetChatbotState() {
+    // Reset the response container to empty (to avoid showing any form or response)
+    const responseContainer = document.getElementById('response');
+    responseContainer.innerHTML = '';
+
+}
+
+// Call the reset function when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    resetChatbotState();
+});
+
+//====================================================================================================
+
+// Function to hide the question buttons when "Other Questions" is clicked
+function hideQuestionButtons() {
+    const optionsContainer = document.getElementById('options');
+    optionsContainer.style.display = 'none'; // Hide the question buttons
+}
+
+// Function to handle "Other Questions" button separately
+function handleOtherQuestions() {
+    hideQuestionButtons(); // Hide the question buttons
+    generateEmailForm(""); // Display email form for "Other Questions" button
+}
+
+// Existing code for handling responses, form submission, etc.
+function generateEmailForm(initialQuery) {
+    const responseContainer = document.getElementById('response');
+    responseContainer.innerHTML = ''; // Clear previous messages
+
+    const message = document.createElement('p');
+    message.textContent = "I couldn't find an answer to your question. Please provide your email, and I'll get back to you shortly!";
+    responseContainer.appendChild(message);
+
+    const form = document.createElement('form');
+    form.id = "email-form";
+
+    const emailInput = document.createElement('input');
+    emailInput.type = 'email';
+    emailInput.placeholder = 'Your email address';
+    emailInput.required = true;
+    form.appendChild(emailInput);
+
+    const queryTextarea = document.createElement('textarea');
+    queryTextarea.placeholder = 'Your question';
+    queryTextarea.value = initialQuery;
+    queryTextarea.required = true;
+    form.appendChild(queryTextarea);
+
+    const submitButton = document.createElement('button');
+    submitButton.type = 'button';
+    submitButton.textContent = 'Send';
+    submitButton.addEventListener('click', () => submitEmailForm(emailInput.value, queryTextarea.value));
+    form.appendChild(submitButton);
+
+    responseContainer.appendChild(form);
+}
+
+//====================================================================================================
+
+// Function to reset the chatbot to its idle state on page load
+function resetChatbotState() {
+    // Reset the response container to empty (to avoid showing any form or response)
+    const responseContainer = document.getElementById('response');
+    responseContainer.innerHTML = '';
+
+}
+
+// Call the reset function when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    resetChatbotState();
+    // Add the event listener for the "Other Questions" button here
+    document.getElementById('other-questions-button').addEventListener('click', handleOtherQuestions);
+});
+
+// Function to reset the chatbot state when opening
+function resetOnOpenChatbot() {
+    const responseContainer = document.getElementById('response');
+    const userInput = document.getElementById('user-input');
+    const optionsContainer = document.getElementById('options');
+    
+    responseContainer.innerHTML = ''; // Clear messages
+    userInput.value = ''; // Clear input field
+    optionsContainer.style.display = 'flex'; // Show question buttons again
+}
