@@ -18,7 +18,16 @@ const funFacts = [
     "I used to sketch as a hobby and find it a great way to relax and express creativity.",
     "I love exploring historical sites and megaliths—it fuels my imagination and inspires my creativity.",
     "I’m a self-proclaimed 'Emo kid' at heart and still love bands like My Chemical Romance.",
-    "I believe that kindness and empathy are as essential in life as technical skills."
+    "I believe that kindness and empathy are as essential in life as technical skills.",
+    "My favourite Doctor is Ten",
+    "I have lived in America, Australia and Thailand for periods of time",
+    "I am allergic to dust due to years of exposure to utricating hairs from my tarantulas",
+    "I have drilled into the horn of a Rhino",
+    "I have given a Zebra a haircut",
+    "I have wrestled a crocodile",
+    "I am a Witch",
+    "I was once on The Weakest Link",
+    "I love musical theatre"
 ];
 
 // Function to select a random fun fact
