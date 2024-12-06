@@ -20,7 +20,7 @@ const funFacts = [
     "I’m a self-proclaimed 'Emo kid' at heart and still love bands like My Chemical Romance.",
     "I believe that kindness and empathy are as essential in life as technical skills.",
     "My favourite Doctor is Ten",
-    "I have lived in America, Australia and Thailand for periods of time",
+    "I have lived in America, Africa, Australia and Thailand for periods of time",
     "I am allergic to dust due to years of exposure to utricating hairs from my tarantulas",
     "I have drilled into the horn of a Rhino",
     "I have given a Zebra a haircut",
