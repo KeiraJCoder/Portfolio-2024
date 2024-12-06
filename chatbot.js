@@ -73,7 +73,7 @@ const faqKeywords = [
     },
     {
         keywords: ["languages", "programming", "coding"],
-        answer: "I am proficient in JavaScript, Python, and SQL."
+        answer: "I can code in JavaScript, Python, and SQL."
     },
     {
         keywords: ["developer", "specialise", "specialization", "specialty", "focus", "area"],
