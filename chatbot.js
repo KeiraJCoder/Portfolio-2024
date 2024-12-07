@@ -46,6 +46,9 @@ const faqKeywords = [
     {
         keywords: ["about", "developer", "keira"],
         answer: "I am Keira Jarvis, a skilled software developer and instructor specialising in front-end development."
+    },{
+        keywords: ["colour" , "color"],
+        answer: "My favourite colour is purple"
     },
     {
         keywords: ["skills", "proficient", "technologies"],
