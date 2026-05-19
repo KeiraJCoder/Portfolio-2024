@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Keira Jarvis Portfolio</title><!-- styles -->
+    <title>Keira Jarvis | AI Focused Technical Instructor</title>
+    <!-- styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -36,252 +40,283 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#ai">AI</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    
-    
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="intro">
-            <img class="image" src="profile.jpg" alt="An image of Keira">
-            <h1>Keira Jarvis</h1>
-            <p>Software Developer & Instructor</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-eyebrow">AI, Software Development & Technical Education</p>
+
+                <h1>Keira Jarvis</h1>
+
+                <h2>AI-Focused Software Development Instructor</h2>
+
+                <p class="hero-summary">
+                    I design and deliver practical software development training, build AI-assisted learning workflows, and create scalable technical resources that help learners and teams work with clarity, confidence, and purpose.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#ai" class="btn btn-secondary">Explore AI Contributions</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img class="hero-image" src="profile.jpg" alt="Portrait of Keira Jarvis">
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>
-                Hi, I'm Keira Jarvis, a dedicated software developer and instructor with a passion for creating innovative web applications and empowering others to excel in technology. 
-                With expertise in front-end and back-end development, I specialise in building intuitive, user-friendly websites and applications that blend creativity with robust technical functionality.
-            </p>
-            <p>
-                My portfolio reflects a strong foundation in technologies like HTML, CSS, JavaScript, React, Node.js, and API integrations, with a growing focus on security and best practices in development.
-            </p>
-            <p>
-                My recent recognition includes being shortlisted for the <strong><a href="https://www.grcworldforums.com/categories/tech-diversity-equity-and-inclusion-advocate-of-the-year/7385.article" target="_blank">Tech Diversity, Equity, and Inclusion Advocate of the Year 2023</a></strong> award for my role as an Equality, Diversity, and Inclusion Champion at Code Nation.
-            </p>
-            <p>
-                When I'm not coding or teaching, you’ll find me exploring new technologies, contributing to open-source projects, or expanding my knowledge in cybersecurity.
-            </p>
-            <p>
-                Let’s connect! You can view my projects on 
-                <a href="https://github.com/KeiraJCoder" target="_blank">GitHub</a> or reach out via <a href="https://www.linkedin.com/in/keirajcoder/" target="_blank">LinkedIn</a>.
-            </p>
-            <a href="mailto:keirajcoder@hotmail.com">Request My CV</a>
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="section-container">
+        <p class="section-eyebrow">About Me</p>
+
+        <h2>Technical educator, developer, and AI workflow builder.</h2>
+
+        <p class="about-lead">
+            I am a software development instructor with experience delivering technical training across beginner, bootcamp, and apprenticeship settings. My work combines clear teaching, practical development, and AI-assisted systems that make learning more structured, scalable, and effective.
+        </p>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Software Development</h3>
+                <p>
+                    I teach and build with HTML, CSS, JavaScript, React, Node.js, APIs, MySQL, and modern development workflows.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Technical Education</h3>
+                <p>
+                    I create learner-focused resources, assessment support, curriculum materials, and structured teaching systems.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>AI & Automation</h3>
+                <p>
+                    I use AI and automation to improve feedback, reduce repetitive admin, support debugging, and strengthen learner confidence.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <!-- Skills Section -->
-<section id="skills">
-    <h2 class="h2">Skills</h2>
-    <div class="skills-container">
-        <!-- Skill 1 -->
-        <div class="skill-card">
-            <i class="fab fa-html5 skill-icon"></i>
-            <h3>Front-End Development</h3>
-            <p>HTML, CSS, JavaScript, React, Responsive Design, SEO</p>
-        </div>
-        <!-- Skill 2 -->
-        <div class="skill-card">
-            <i class="fas fa-server skill-icon"></i>
-            <h3>Back-End Development</h3>
-            <p>Node.js, Async/Await, API Integration, AJAX</p>
-        </div>
-        <!-- Skill 3 -->
-        <div class="skill-card">
-            <i class="fas fa-database skill-icon"></i>
-            <h3>Database Management</h3>
-            <p>MySQL, Database Design</p>
-        </div>
-        <!-- Skill 4 -->
-        <div class="skill-card">
-            <i class="fas fa-tools skill-icon"></i>
-            <h3>Version Control & Deployment</h3>
-            <p>Git, GitHub, Docker</p>
-        </div>
-        <!-- Skill 5 -->
-        <div class="skill-card">
-            <i class="fas fa-chalkboard-teacher skill-icon"></i>
-            <h3>Instruction & Mentoring</h3>
-            <p>Teaching, Mentorship, Curriculum Design, Technical Writing</p>
-        </div>
-        <!-- Skill 6 -->
-        <div class="skill-card">
-            <i class="fas fa-project-diagram skill-icon"></i>
-            <h3>Project Management</h3>
-            <p>Agile, Scrum, Trello</p>
-        </div>
-        <!-- Skill 7 -->
-        <div class="skill-card">
-            <i class="fas fa-lock skill-icon"></i>
-            <h3>Cybersecurity Awareness</h3>
-            <p>Secure Coding Practices, Authentication, Web Security</p>
-        </div>
-        <!-- Skill 8 -->
-        <div class="skill-card">
-            <i class="fas fa-laptop-code skill-icon"></i>
-            <h3>Technical Expertise</h3>
-            <p>Debugging, Testing, API Documentation</p>
-        </div>
-        <!-- Skill 9 -->
-        <div class="skill-card">
-            <i class="fas fa-gamepad skill-icon"></i>
-            <h3>3D Game Design</h3>
-            <p>Blender, Unity, Unreal Engine, Asset Creation</p>
-        </div>
-        <!-- Skill 10 -->
-        <div class="skill-card">
-            <i class="fas fa-palette skill-icon"></i>
-            <h3>UX/UI Design</h3>
-            <p>Wireframing, Prototyping, User Testing, Accessibility</p>
+<section id="skills" class="skills-section">
+    <div class="section-container">
+
+        <p class="section-eyebrow">Core Expertise</p>
+
+        <h2>Modern development, AI integration, and technical education.</h2>
+
+        <div class="skills-grid">
+
+            <div class="skills-panel">
+                <h3>Software Development</h3>
+
+                <div class="skill-tags">
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>REST APIs</span>
+                    <span>MySQL</span>
+                    <span>Git</span>
+                </div>
+            </div>
+
+            <div class="skills-panel">
+                <h3>AI & Automation</h3>
+
+                <div class="skill-tags">
+                    <span>Prompt Engineering</span>
+                    <span>AI Assisted Workflows</span>
+                    <span>Power Automate</span>
+                    <span>Workflow Optimisation</span>
+                    <span>Educational Automation</span>
+                    <span>AI Enhanced Learning</span>
+                </div>
+            </div>
+
+            <div class="skills-panel">
+                <h3>Technical Education</h3>
+
+                <div class="skill-tags">
+                    <span>Curriculum Design</span>
+                    <span>Bootcamp Delivery</span>
+                    <span>Apprenticeship Coaching</span>
+                    <span>Assessment Systems</span>
+                    <span>Accessibility</span>
+                    <span>Learner Support</span>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
+<!-- AI Contributions Section -->
+<section id="ai" class="ai-section">
+    <div class="section-container">
+
+        <p class="section-eyebrow">AI Contributions</p>
+
+        <h2>Practical AI use for teaching, feedback, workflow design, and learner support.</h2>
+
+        <div class="ai-grid">
+
+            <article class="ai-card">
+                <span>01</span>
+                <h3>AI Assisted Feedback</h3>
+                <p>
+                    Developed structured feedback workflows that use AI to support consistency, speed, and clarity across learner submissions.
+                </p>
+            </article>
+
+            <article class="ai-card">
+                <span>02</span>
+                <h3>Learning Support Systems</h3>
+                <p>
+                    Created scaffolded resources, guided examples, and assessment support materials to help learners understand complex technical tasks.
+                </p>
+            </article>
+
+            <article class="ai-card">
+                <span>03</span>
+                <h3>Workflow Automation</h3>
+                <p>
+                    Built and refined automated processes for repetitive teaching and admin tasks, improving reliability and reducing manual workload.
+                </p>
+            </article>
+
+            <article class="ai-card">
+                <span>04</span>
+                <h3>AI Enhanced Delivery</h3>
+                <p>
+                    Integrated AI into software development teaching for debugging, planning, code review, accessibility, and problem solving.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
 
 <!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <br><br>
-    <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card project-card-1" data-link="https://keirajcoder.github.io/DoctorWho-TopTrumps/" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">Doctor Who Top Trumps</h3>
-                    <p class="project-description">
-                        Built with HTML, CSS, JavaScript - A web-based card game where players face off against Doctor Who aliens.
-                    </p>
-                </div>
-                <div class="project-back">
-                    <img src="gifs/toptrumps.gif" alt="Doctor Who Top Trumps Preview">
-                    <p class="click-to-open">Click to open</p>
-                </div>
-            </div>
-        </div>
+<section id="projects" class="projects-section">
+    <div class="section-container">
 
-        <!-- Project 2 -->
-        <div class="project-card project-card-2" data-link="https://keirajcoder.github.io/New_Pokedex/" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">Pokedex</h3>
-                    <p class="project-description">
-                        Built in react with API integration - An interactive app displaying a list of Pokémon with their stats and details.
-                    </p>
-                </div>
-                <div class="project-back">
-                    <img src="gifs/pokedex.gif" alt="Pokedex Preview">
-                    <p class="click-to-open">Click to open</p>
-                </div>
-            </div>
-        </div>
+        <p class="section-eyebrow">Selected Projects</p>
 
-        <!-- Project 3 -->
-        <div class="project-card project-card-3" data-link="https://keirajcoder.github.io/doctor-who-recommender/" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">Doctor Who Recommender</h3>
-                    <p class="project-description">
-                        Built with a custom designed JSON database - An interactive quiz that recommends a Doctor Who episode based on preferences.
-                    </p>
-                </div>
-                <div class="project-back">
-                    <img src="gifs/DW.gif" alt="Doctor Who Episode Recommender Preview">
-                    <p class="click-to-open">Click to open</p>
-                </div>
-            </div>
-        </div>
+        <h2>Development projects focused on interaction, accessibility, creativity, and technical learning.</h2>
 
-        <!-- Project 4 -->
-        <div class="project-card project-card-4" data-link="https://keirajcoder.github.io/cybersecuritywebsite/index.html" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">Cybersecurity Website</h3>
-                    <p class="project-description">
-                        Built with HTML, CSS, JavaScript - A gamified Cybersecurity site aimed at educating users.
-                    </p>
-                </div>
-                <div class="project-back">
-                    <img src="gifs/Cyber.gif" alt="Cybersecurity Website Preview">
-                    <p class="click-to-open">Click to open</p>
-                </div>
-            </div>
-        </div>
+        <div class="modern-projects-grid">
 
-        <!-- Project 5 -->
-        <div class="project-card project-card-5" data-link="https://keirajcoder.github.io/virtualpet/" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">Virtual Pet</h3>
-                    <p class="project-description">
-                        Built with HTML, CSS, JavaScript - An interactive app where users can create and care for a virtual pet.
-                    </p>
-                </div>
-                <div class="project-back">
-                    <img src="gifs/Cyberpet.gif" alt="Virtual Pet Preview">
-                    <p class="click-to-open">Click to open</p>
-                </div>
-            </div>
-        </div>
+            <!-- Project -->
+            <article class="modern-project-card">
+                <img src="gifs/pokedex.gif" alt="Pokedex Project Preview">
 
-        <!-- Project 6 -->
-        <div class="project-card project-card-6" data-link="https://keirajcoder.github.io/Festpod/" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">Festpod</h3>
-                    <p class="project-description">
-                        Built with HTML, CSS, JavaScript - A podcast website for Festpod.
-                    </p>
-                </div>
-                <div class="project-back">
-                    <img src="gifs/Festpod.gif" alt="Festpod Preview">
-                    <p class="click-to-open">Click to open</p>
-                </div>
-            </div>
-        </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>API</span>
+                        <span>Responsive UI</span>
+                    </div>
 
-        <!-- Project 7 -->
-        <div class="project-card project-card-7" data-link="https://keirajcoder.github.io/Elvish-Translator/" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">Elvish Translator</h3>
-                    <p class="project-description">
-                        Built with HTML, CSS, JavaScript, utilising API integration - A translation app for converting text into the Elvish language from Lord of the Rings.
-                    </p>
-                </div>
-                <div class="project-back">
-                    <img src="gifs/Elvish.gif" alt="Elvish Translator Preview">
-                    <p class="click-to-open">Click to open</p>
-                </div>
-            </div>
-        </div>
+                    <h3>Pokedex</h3>
 
-        <!-- Project 8 -->
-        <div class="project-card project-card-8" data-link="https://keirajcoder.github.io/The-Gunslinger/index.html" data-flipped="false">
-            <div class="project-inner">
-                <div class="project-front">
-                    <h3 class="project-title">The Gunslinger</h3>
-                    <p class="project-description">
-                        Built with HTML, CSS animations, JavaScript - A tribute website for Stephen King's Dark Tower series, focusing on The Gunslinger.
+                    <p>
+                        Interactive Pokémon application using API integration, responsive design, and dynamic rendering.
                     </p>
+
+                    <a href="https://keirajcoder.github.io/New_Pokedex/" target="_blank">
+                        View Project
+                    </a>
                 </div>
-                <div class="project-back">
-                    <img src="gifs/gunslinger.gif" alt="The Gunslinger Preview">
-                    <p class="click-to-open">Click to open</p>
+            </article>
+
+            <!-- Project -->
+            <article class="modern-project-card">
+                <img src="gifs/Cyber.gif" alt="Cybersecurity Website Preview">
+
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Education</span>
+                        <span>Gamification</span>
+                    </div>
+
+                    <h3>Cybersecurity Website</h3>
+
+                    <p>
+                        Educational cybersecurity experience designed to make technical awareness more engaging and accessible.
+                    </p>
+
+                    <a href="https://keirajcoder.github.io/cybersecuritywebsite/index.html" target="_blank">
+                        View Project
+                    </a>
                 </div>
-            </div>
+            </article>
+
+            <!-- Project -->
+            <article class="modern-project-card">
+                <img src="gifs/Memoirs.gif" alt="Author Website Preview">
+
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>Branding</span>
+                        <span>Frontend</span>
+                        <span>UX</span>
+                    </div>
+
+                    <h3>Keira Jarvis Author</h3>
+
+                    <p>
+                        Professional author platform focused on presentation, storytelling, readability, and visual identity.
+                    </p>
+
+                    <a href="https://keirajarvisauthor.com/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project -->
+            <article class="modern-project-card">
+                <img src="gifs/DW.gif" alt="Doctor Who Recommender Preview">
+
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>JSON</span>
+                        <span>Interactive Logic</span>
+                    </div>
+
+                    <h3>Doctor Who Recommender</h3>
+
+                    <p>
+                        Interactive recommendation engine using custom JSON data structures and conditional logic.
+                    </p>
+
+                    <a href="https://keirajcoder.github.io/doctor-who-recommender/" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </article>
+
         </div>
     </div>
 </section>
 
-  <!-- Chatbot section -->
+<!-- Chatbot section -->
 
 <!-- ================================================ -->
 <!-- =================== CHATBOT ================= -->
@@ -292,7 +327,7 @@
     <button id="minimize-button" onclick="closeChatbot()">×</button>
     <h2>FAQ Chatbot</h2>
     <p>Hi! How can I assist you today?</p>
-  
+
     <!-- Response section -->
     <div id="response">
         <p>I couldn't find an answer to your question. Please provide your email, and I'll get back to you shortly!</p>
@@ -302,53 +337,72 @@
             <button type="button">Send</button>
         </form>
     </div>
-  
+
     <!-- Options section -->
     <div id="options">
-      <button onclick="getResponse('About Me?')">About Me?</button>
-      <button onclick="getResponse('Skills?')">Skills?</button>
-      <button onclick="getResponse('Experience?')">Experience?</button>
-      <button onclick="getResponse('Programming Languages?')">Programming Languages?</button>
-      <button onclick="getResponse('Specialisation?')">Specialisation?</button>
-      <button onclick="getResponse('Mentorship?')">Mentorship?</button>
-      <button onclick="getResponse('Future Goals?')">Future Goals?</button>
-      <button onclick="getResponse('Other')">Other Questions</button>
+        <button onclick="getResponse('About Me?')">About Me?</button>
+        <button onclick="getResponse('Skills?')">Skills?</button>
+        <button onclick="getResponse('Experience?')">Experience?</button>
+        <button onclick="getResponse('Programming Languages?')">Programming Languages?</button>
+        <button onclick="getResponse('Specialisation?')">Specialisation?</button>
+        <button onclick="getResponse('Mentorship?')">Mentorship?</button>
+        <button onclick="getResponse('Future Goals?')">Future Goals?</button>
+        <button onclick="getResponse('Other')">Other Questions</button>
     </div>
-  <br>
+<br>
     <!-- Input section -->
     <div id="input-container">
-      <input type="text" id="user-input" placeholder="What would you like to know?" />
-      <button id="submit-button" onclick="sendQuestion()">Send</button>
+        <input type="text" id="user-input" placeholder="What would you like to know?" />
+        <button id="submit-button" onclick="sendQuestion()">Send</button>
     </div>
 
 
-      <!-- Hint section -->
-      <div id="hint">
+    <!-- Hint section -->
+    <div id="hint">
         Hint: Ask for a fun fact!
     </div>
 </div>
-  </div>  
-<button id="open-chatbot">Chat with Me</button>
-  
-  
+    </div>  
+    <button id="open-chatbot">Chat with Me</button>
+    
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/mnnayngl" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="_replyto" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="section-container contact-layout">
+
+        <div class="contact-copy">
+            <p class="section-eyebrow">Contact</p>
+
+            <h2>Interested in technical education, AI workflows, or collaboration?</h2>
+
+            <p class="contact-lead">
+                Whether you are looking for technical training, AI-enhanced learning systems, curriculum development, or software collaboration, feel free to get in touch.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:keirajcoder@hotmail.com">Email Me</a>
+                <a href="https://github.com/KeiraJCoder" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/keirajcoder/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <form action="https://formspree.io/f/mnnayngl" method="POST" class="modern-contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn btn-primary">
+                Send Message
+            </button>
         </form>
-    </section>
+
+    </div>
+</section>
 
 
-    <footer>
-        <p>&copy; 2024 Keira Jarvis</p>
+    <footer class="footer">
+        <p>© 2026 Keira Jarvis. Built with HTML, CSS and JavaScript.</p>
     </footer>
 
     <!-- Scripts -->
