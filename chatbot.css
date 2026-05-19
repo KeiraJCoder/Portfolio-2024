@@ -89,12 +89,14 @@
 /* ============================================= */
 
 #response {
-    flex: 1;
+    min-height: 180px;
+    max-height: 320px;
 
     margin-bottom: 18px;
     padding: 18px;
 
     overflow-y: auto;
+    overflow-x: hidden;
 
     border-radius: 22px;
 
@@ -105,16 +107,23 @@
     color: #ffffff;
 
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.7;
+
+    scroll-behavior: smooth;
+
+    display: none;
 }
 
-#response p {
-    color: #c7c7d1;
+#response.active {
+    display: block;
 }
 
 .bot-message,
 .user-message {
-    max-width: 90%;
+    width: fit-content;
+    max-width: 100%;
+
+    word-break: break-word;
 
     margin-bottom: 12px;
     padding: 12px 14px;
@@ -190,6 +199,10 @@
     border-color: rgba(167, 139, 250, 0.38);
 }
 
+#input-container,
+#hint {
+    display: none;
+}
 
 /* ============================================= */
 /* ================ INPUT AREA ================= */
