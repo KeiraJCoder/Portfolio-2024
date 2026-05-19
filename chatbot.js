@@ -270,33 +270,7 @@ function findAnswer(question) {
 }
 
 async function askPortfolioAI(question) {
-    const localAnswer = findAnswer(question);
-
-    try {
-        const response = await fetch("/api/chat", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                question,
-                localContext: portfolioKnowledge.map(item => ({
-                    keywords: item.keywords,
-                    answer: typeof item.answer === "function" ? "Random fun fact available." : item.answer
-                }))
-            })
-        });
-
-        if (!response.ok) {
-            throw new Error("AI endpoint unavailable");
-        }
-
-        const data = await response.json();
-
-        return data.answer || localAnswer || getFallbackMessage();
-    } catch (error) {
-        return localAnswer || getFallbackMessage();
-    }
+    return findAnswer(question) || getFallbackMessage();
 }
 
 function getFallbackMessage() {
@@ -426,6 +400,7 @@ function resetChatbot() {
     const optionsContainer = getElement("options");
     const inputContainer = getElement("input-container");
     const hint = getElement("hint");
+    const responseContainer = getElement("response");
 
     clearResponse();
 
@@ -444,16 +419,49 @@ function resetChatbot() {
     if (hint) {
         hint.style.display = "none";
     }
+
+    if (responseContainer) {
+        responseContainer.classList.remove("active");
+        responseContainer.classList.remove("contact-mode");
+    }
 }
 
-function handleOtherQuestions() {
+function showContactForm() {
+    const optionsContainer = getElement("options");
     const inputContainer = getElement("input-container");
     const hint = getElement("hint");
+    const responseContainer = getElement("response");
+
+    if (optionsContainer) optionsContainer.style.display = "none";
+    if (inputContainer) inputContainer.classList.remove("show-input");
+    if (hint) hint.style.display = "none";
+
+    if (responseContainer) {
+        responseContainer.classList.add("active");
+        responseContainer.classList.add("contact-mode");
+    }
+
+    generateEmailForm("");
+}
+
+function showFunQuestionMode() {
+    const optionsContainer = getElement("options");
+    const inputContainer = getElement("input-container");
+    const hint = getElement("hint");
+    const responseContainer = getElement("response");
+
+    if (optionsContainer) {
+        optionsContainer.style.display = "none";
+    }
+
+    if (responseContainer) {
+        responseContainer.classList.remove("contact-mode");
+    }
 
     clearResponse();
 
     createMessage(
-        "Ask me something specific about Keira, her work, projects, AI experience, teaching style, or background.",
+        "Ask me something more personal. Try fun fact, pets, books, gaming, travel, or music.",
         "bot"
     );
 
@@ -468,9 +476,15 @@ function handleOtherQuestions() {
 
 function handleQuickQuestion(event) {
     const buttonText = event.target.textContent.trim();
+    const normalisedButtonText = buttonText.toLowerCase();
 
-    if (buttonText.toLowerCase().includes("other")) {
-        handleOtherQuestions();
+    if (normalisedButtonText.includes("ask anything")) {
+        showContactForm();
+        return;
+    }
+
+    if (normalisedButtonText.includes("something")) {
+        showFunQuestionMode();
         return;
     }
 
