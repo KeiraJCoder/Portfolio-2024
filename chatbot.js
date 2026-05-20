@@ -1,15 +1,31 @@
 const funFacts = [
     "I once wrestled a crocodile.",
-    
+
     "I have drilled into the horn of a rhino as part of wildlife veterinary work.",
 
     "I have given a zebra a haircut.",
 
-    "I worked on a wildlife reserve in Africa surrounded by rhinos, crocodiles, zebras, giraffes, and antelope.",
+    "I have measured my hand against the paw of a sleeping Lion",
+
+    "I have done anti-poaching training",
+
+    "I have hand fed Monkeys",
+
+    "I have swam with Hawksbill Turtles and Southern Stringrays",
+
+    "I have scuba dived with 4 different types of Shark",
+
+    "I have tube fed a baby Giraffe",
+
+    "I have tube fed a baby Penguin",
+
+    "I worked on a wildlife reserve in Africa surrounded by Rhinos, Crocodiles, Zebras, Giraffes, Elephant and Antelope.",
 
     "I have travelled and worked across five continents so far.",
 
     "Before moving into tech education, I worked in animal care, wildlife rehabilitation, veterinary support, youth work, and mental health support.",
+
+    "I have worked with police dogs earlier in my career.",
 
     "I once fronted a band called 'Unknown' as lead singer and guitarist.",
 
@@ -21,33 +37,25 @@ const funFacts = [
 
     "I am obsessed with bioactive ecosystems and miniature self-sustaining habitats.",
 
-    "I keep tarantulas, snakes, fish, cats, and a dog.",
+    "I keep tarantulas, Snakes, Fish, Cats, and a Dog.",
 
     "My favourite Doctor is Ten, although Twelve is dangerously close.",
 
-    "I genuinely love spreadsheets when they are organised properly.",
-
     "I teach AI, software, cybersecurity, networking, data, and digital skills, but I also spend time writing fantasy fiction.",
 
-    "I grew up in East London and now live near Chester.",
+    "I was born and grew up in East London and now live in North Wales.",
 
     "My favourite game worlds are Skyrim, Fallout, Red Dead Redemption 2, and Cyberpunk 2077.",
 
     "I prefer dark fantasy over traditional fantasy.",
 
-    "I once redesigned technical learning resources for ESOL learners to make programming more accessible.",
-
     "I enjoy historical sites, castles, ruins, and old architecture.",
 
     "Purple somehow became both my favourite colour and my accidental personal brand.",
 
-    "I have designed AI-assisted feedback systems to reduce repetitive admin and improve learner clarity.",
-
     "I have taught learners from complete beginners through to Level 4 apprenticeships.",
 
     "I enjoy building structured systems almost as much as I enjoy breaking them apart to improve them.",
-
-    "I do not drink tea or coffee, which in Britain is apparently a criminal offence.",
 
     "I love musical theatre far more than most people expect.",
 
@@ -55,9 +63,43 @@ const funFacts = [
 
     "I combine technical education with accessibility-first teaching approaches for mixed-ability learners.",
 
-    "I have worked with police dogs earlier in my career.",
+    "I turned a technical portfolio into an interactive AI-assisted experience because a static portfolio felt boring.",
 
-    "I turned a technical portfolio into an interactive AI-assisted experience because a static portfolio felt boring."
+    "Alongside technical education, I have also worked as an actor and voice artist across stage, television, and commercial work.",
+
+    "I appeared as an extra in a major motion picture due for release in autumn 2026.",
+
+    "I can perform a wide range of accents including Cockney, RP, Welsh, Scottish, Australian, Irish, and multiple American variations.",
+
+    "I can switch between male, female, and androgynous vocal ranges for character work.",
+
+    "I once starred alongside Ronan Keating on Capital FM.",
+
+    "I played Danny in Grease, which involved singing, dancing, and acting all at once.",
+
+    "I have performed in productions including Sweeney Todd, Jekyll and Hyde, Oliver Twist, and Grease.",
+
+    "I can do impressions ranging from Brian Blessed and Gandalf to Frank Spencer and Professor McGonagall.",
+
+    "I have voice acting experience with animated, dramatic, comedic, and character-based performances.",
+
+    "I somehow ended up combining technical education, fantasy writing, wildlife work, AI systems, and acting into one career path.",
+
+    "My acting and voice work has helped shape how I present, teach, and engage learners during live delivery.",
+
+    "I have appeared in television productions, commercials, stage productions, and major film work.",
+
+    "I have a naturally adaptable voice, which makes both teaching and character performance surprisingly useful crossover skills.",
+
+    "I enjoy character-driven storytelling whether that is through acting, writing, frontend projects, or technical teaching.",
+    
+    "I have ridden a Camel, an Elephant and in a 2 person Helicopter",
+
+    "I was a photographer at Chester Zoo for a while",
+
+    "I once got the number 1 spot for 'Emo Music' in the UK",
+
+    "I have had my photography displayed in art galleries around the world"
 ];
 
 const portfolioKnowledge = [
