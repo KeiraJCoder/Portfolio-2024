@@ -1,207 +1,201 @@
 const funFacts = [
-    "I worked in Africa for two months as a Veterinary Assistant on a game reserve.",
-    "I have travelled and worked in five continents so far and plan to visit all seven.",
-    "I once played guitar and sang in a band called 'Unknown'. Music has always been a huge part of my life.",
-    "I have a degree in Counselling Skills with Psychology.",
-    "My all-time favourite book series is The Gunslinger by Stephen King.",
-    "I care for an incredible range of pets, including a dog, three cats, seven tarantulas, one snake, and four fish.",
-    "I have written a trilogy of books called Memoirs of a Vampyr's Daughter. Two are currently published.",
-    "I am fascinated by 3D game building and love exploring the creative potential of game engines.",
-    "I lived in Thailand for over a month after my surgery and fell in love with the culture and food.",
-    "I am deeply inspired by Thai Buddhist art.",
-    "One of my hobbies is creating bioactive tanks filled with plants, springtails, and tiny creatures.",
-    "I once designed a website that translated text into Elvish from The Lord of the Rings.",
-    "I grew up in East London, a proper Cockney, and now live near Chester.",
-    "I enjoy gaming and love titles like Skyrim, Fallout, and Cyberpunk 2077 for their immersive storytelling.",
-    "I used to sketch as a hobby and find it a great way to relax and express creativity.",
-    "I love exploring historical sites and megaliths because it fuels my imagination and inspires my creativity.",
-    "I am an Emo kid at heart and still love bands like My Chemical Romance.",
-    "I believe that kindness and empathy are as essential in life as technical skills.",
-    "My favourite Doctor is Ten.",
-    "I have lived in America, Africa, Australia, and Thailand for periods of time.",
-    "I am allergic to dust due to years of exposure to urticating hairs from my tarantulas.",
-    "I have drilled into the horn of a rhino.",
+    "I once wrestled a crocodile.",
+    
+    "I have drilled into the horn of a rhino as part of wildlife veterinary work.",
+
     "I have given a zebra a haircut.",
-    "I have wrestled a crocodile.",
-    "I love musical theatre."
+
+    "I worked on a wildlife reserve in Africa surrounded by rhinos, crocodiles, zebras, giraffes, and antelope.",
+
+    "I have travelled and worked across five continents so far.",
+
+    "Before moving into tech education, I worked in animal care, wildlife rehabilitation, veterinary support, youth work, and mental health support.",
+
+    "I once fronted a band called 'Unknown' as lead singer and guitarist.",
+
+    "I have published a full fantasy trilogy called Memoirs of a Vampyr's Daughter, available through my author website.",
+
+    "I built a website that translated text into Elvish from The Lord of the Rings.",
+
+    "I have a degree in Counselling Skills with Psychology.",
+
+    "I am obsessed with bioactive ecosystems and miniature self-sustaining habitats.",
+
+    "I keep tarantulas, snakes, fish, cats, and a dog.",
+
+    "My favourite Doctor is Ten, although Twelve is dangerously close.",
+
+    "I genuinely love spreadsheets when they are organised properly.",
+
+    "I teach AI, software, cybersecurity, networking, data, and digital skills, but I also spend time writing fantasy fiction.",
+
+    "I grew up in East London and now live near Chester.",
+
+    "My favourite game worlds are Skyrim, Fallout, Red Dead Redemption 2, and Cyberpunk 2077.",
+
+    "I prefer dark fantasy over traditional fantasy.",
+
+    "I once redesigned technical learning resources for ESOL learners to make programming more accessible.",
+
+    "I enjoy historical sites, castles, ruins, and old architecture.",
+
+    "Purple somehow became both my favourite colour and my accidental personal brand.",
+
+    "I have designed AI-assisted feedback systems to reduce repetitive admin and improve learner clarity.",
+
+    "I have taught learners from complete beginners through to Level 4 apprenticeships.",
+
+    "I enjoy building structured systems almost as much as I enjoy breaking them apart to improve them.",
+
+    "I do not drink tea or coffee, which in Britain is apparently a criminal offence.",
+
+    "I love musical theatre far more than most people expect.",
+
+    "One of my favourite things is helping learners realise they are more capable than they thought they were.",
+
+    "I combine technical education with accessibility-first teaching approaches for mixed-ability learners.",
+
+    "I have worked with police dogs earlier in my career.",
+
+    "I turned a technical portfolio into an interactive AI-assisted experience because a static portfolio felt boring."
 ];
 
 const portfolioKnowledge = [
+    {
+        keywords: ["about", "developer", "keira", "who"],
+        answer: "Keira Jarvis is an AI-focused Technical Instructor specialising in technical education, AI-assisted workflows, software development, cybersecurity, networking, data, and digital skills. Her work combines structured teaching, learner support, accessibility, and practical automation."
+    },
+    {
+        keywords: ["skills", "proficient", "technologies", "technical skills"],
+        answer: "Keira works across JavaScript, HTML, CSS, React, Node.js, APIs, MySQL, SQL, Python, Git, GitHub, Power Automate, prompt engineering, AI-assisted workflows, and technical education."
+    },
+    {
+        keywords: ["experience", "teaching", "career", "training", "learners"],
+        answer: "Keira has experience delivering Level 2 digital skills, Level 3 software development, and Level 4 apprenticeship workshops. She creates structured resources, supports mixed-ability learners, and builds scalable learning workflows."
+    },
+    {
+        keywords: ["ai", "automation", "workflow", "chatgpt", "prompt", "artificial intelligence"],
+        answer: "Keira uses AI and automation to support feedback, learner guidance, debugging, workflow design, admin reduction, and scalable technical education. Her featured case study shows AI-assisted feedback and workflow systems in practice."
+    },
+    {
+        keywords: ["case study", "featured", "feedback system", "feedback systems"],
+        answer: "The featured case study is Keira's AI-Assisted Feedback Systems project. It focuses on structured feedback, workflow automation, prompt-engineered support, trainer review, learner clarity, and scalable technical education."
+    },
+    {
+        keywords: ["power automate", "automate", "flows", "flow"],
+        answer: "Keira has used Power Automate to design workflow systems that support learner communication, feedback delivery, admin reduction, and structured educational processes."
+    },
+    {
+        keywords: ["send", "additional needs", "reasonable adjustments", "learner support"],
+        answer: "Keira is a SEND Champion and supports learners through accessible resources, clear instructions, reasonable adjustment awareness, scaffolded guidance, and inclusive delivery for mixed-ability cohorts."
+    },
+    {
+        keywords: ["dei", "edi", "equality", "diversity", "inclusion", "accessibility"],
+        answer: "Keira has worked as a Diversity, Equity and Inclusion Lead, supporting accessibility, learner advocacy, inclusive education, mentoring, and safer routes into technology for underrepresented learners."
+    },
+    {
+        keywords: ["apprenticeship", "apprenticeships", "level 4"],
+        answer: "Keira has delivered Level 4 apprenticeship workshops covering software development, workplace application, requirements gathering, Agile methods, object-oriented programming, testing, and technical coaching."
+    },
+    {
+        keywords: ["level 2", "level 3", "level 4", "levels"],
+        answer: "Keira has delivered across Level 2 to Level 4 provision, including digital skills, software development, apprenticeship workshops, databases, cybersecurity, networking, data, and AI-enhanced learning."
+    },
+    {
+        keywords: ["esol", "mixed ability", "beginner", "beginners"],
+        answer: "Keira supports ESOL and mixed-ability learners by breaking complex tasks into clear steps, using scaffolded resources, modelling answers, and providing accessible feedback."
+    },
+    {
+        keywords: ["projects", "portfolio", "work", "work examples"],
+        answer: "Keira's portfolio includes a featured AI-Assisted Feedback Systems case study, a Pokedex, Cybersecurity Website, Author Website, Doctor Who Recommender, Top Trumps game, Virtual Pet, Festpod, and an Elvish Translator."
+    },
+    {
+        keywords: ["pokedex", "pokemon"],
+        answer: "The Pokedex project demonstrates API integration, responsive UI design, dynamic rendering, and frontend development skills."
+    },
+    {
+        keywords: ["cyber", "cybersecurity", "security"],
+        answer: "Keira teaches cybersecurity awareness and has built an educational cybersecurity website designed to make technical security concepts more engaging and accessible."
+    },
+    {
+        keywords: ["author", "memoirs", "vampyr", "daughter", "vampyrs", "published"],
+        answer: "Keira has written a trilogy called Memoirs of a Vampyr's Daughter. All three books are published, and her author website showcases her storytelling and frontend branding work."
+    },
+    {
+        keywords: ["doctor who", "recommender", "top trumps"],
+        answer: "Keira has built Doctor Who themed projects including an episode recommender using JSON and conditional logic, and a Top Trumps style JavaScript card game."
+    },
+    {
+        keywords: ["teaching philosophy", "teaching style", "approach", "instruction", "educator"],
+        answer: "Keira's teaching style is structured, practical, learner-centred, and confidence-focused. She breaks complex topics into manageable steps and uses clear examples, accessibility, and applied practice."
+    },
+    {
+        keywords: ["mentorship", "students", "support", "coaching"],
+        answer: "Keira supports learners through technical coaching, mentoring, feedback, debugging support, confidence building, and practical workplace-focused guidance."
+    },
+    {
+        keywords: ["databases", "sql", "data management", "data"],
+        answer: "Keira teaches data skills including spreadsheets, data management, SQL, MySQL, relational database concepts, and practical data analysis."
+    },
+    {
+        keywords: ["networking", "networks", "packet tracer"],
+        answer: "Keira teaches networking concepts including devices, connectivity, troubleshooting, technical support, and practical network awareness."
+    },
+    {
+        keywords: ["social media", "marketing", "campaign"],
+        answer: "Keira teaches social media marketing, campaign planning, digital graphics, audience targeting, platform choice, and review of campaign materials."
+    },
+    {
+        keywords: ["programming", "coding", "languages"],
+        answer: "Keira works with JavaScript, HTML, CSS, React, Node.js, APIs, MySQL, SQL, Python, and has also developed experience with C#."
+    },
+    {
+        keywords: ["quality", "qa", "iqa", "assessment", "feedback"],
+        answer: "Keira has strong experience with assessment support, feedback quality, evidence gathering, learner guidance, quality assurance expectations, and clear assessment-aligned resources."
+    },
+    {
+        keywords: ["satisfaction", "metrics", "stats", "results", "impact"],
+        answer: "Keira's portfolio highlights strong learner satisfaction, delivery across Level 2 to Level 4, AI and automation systems, and SEND and DEI advocacy."
+    },
+    {
+        keywords: ["contact", "email", "reach", "linkedin", "github"],
+        answer: "You can contact Keira through the contact form on this site, LinkedIn, GitHub, or by email at keira.jarvis@hotmail.co.uk."
+    },
+    {
+        keywords: ["future goals", "aspirations", "plans", "currently exploring"],
+        answer: "Keira is currently exploring AI-enhanced education systems, workflow automation, accessibility-first learning design, scalable learner support, and creative technology."
+    },
+    {
+        keywords: ["animal", "animals", "wildlife", "conservation", "veterinary"],
+        answer: "Before moving deeper into technical education, Keira worked across animal care, wildlife rehabilitation, veterinary support, conservation, and public education. That background strongly shapes her communication, empathy, and practical teaching style."
+    },
+    {
+        keywords: ["mental health", "youth work", "safeguarding"],
+        answer: "Keira has earlier experience in youth mental health, safeguarding, and community support. This contributes to her learner-centred teaching, calm communication, and inclusive support approach."
+    },
+    {
+        keywords: ["hobbies", "interests", "outside work"],
+        answer: "Outside work, Keira enjoys reading fantasy and dark fiction, gaming, writing, animals, bioactive tanks, historical sites, and creative technology."
+    },
+    {
+        keywords: ["books", "reading", "favourite books"],
+        answer: "Keira enjoys fantasy and dark fiction, especially Philip Pullman, Raymond E. Feist, Christopher Paolini, and Stephen King."
+    },
+    {
+        keywords: ["gaming", "video games", "games"],
+        answer: "Keira enjoys immersive story-rich games including Skyrim, Fallout, Red Dead Redemption, and Cyberpunk 2077."
+    },
     {
         keywords: ["fun fact", "fun", "fact", "tell me something fun"],
         answer: getRandomFunFact
     },
     {
-        keywords: ["about", "developer", "keira", "who"],
-        answer: "I am Keira Jarvis, an AI-focused Technical Instructor. I teach across social media marketing, networking, data, software development, AI, and cybersecurity."
-    },
-    {
         keywords: ["colour", "color"],
-        answer: "My favourite colour is purple."
-    },
-    {
-        keywords: ["skills", "proficient", "technologies", "technical skills"],
-        answer: "I work across software development, data, networking, cybersecurity, AI, social media marketing, prompt engineering, Power Automate, and technical education."
-    },
-    {
-        keywords: ["portfolio", "projects", "work", "work examples"],
-        answer: "Please explore the Projects section to see examples of my work, including a Pokedex, Cybersecurity Website, Doctor Who Recommender, and Author Website."
-    },
-    {
-        keywords: ["experience", "teaching", "career", "training", "learners"],
-        answer: "I have several years of experience delivering technical training, supporting learners, creating resources, and building structured learning workflows."
-    },
-    {
-        keywords: ["contact", "email", "reach", "linkedin", "github"],
-        answer: "You can contact me through the contact form on this site, LinkedIn, GitHub, or by email at KeiraJCoder@hotmail.com."
-    },
-    {
-        keywords: ["teaching philosophy", "teaching style", "approach", "instruction", "educator"],
-        answer: "My teaching style focuses on clear structure, practical examples, learner confidence, and breaking complex topics into manageable steps."
-    },
-    {
-        keywords: ["languages", "programming", "coding"],
-        answer: "I work with JavaScript, HTML, CSS, React, Node.js, APIs, MySQL, SQL, and Python."
-    },
-    {
-        keywords: ["specialise", "specialisation", "specialization", "specialty", "focus", "area"],
-        answer: "My current focus is technical instruction, AI-enhanced learning, workflow automation, and practical digital skills across multiple technical areas."
-    },
-    {
-        keywords: ["tools", "software", "development"],
-        answer: "I use tools such as Git, GitHub, VS Code, Power Automate, AI tools, and development environments to support technical teaching and project work."
-    },
-    {
-        keywords: ["certifications", "awards", "achievements"],
-        answer: "I was shortlisted for Tech Diversity, Equity, and Inclusion Advocate of the Year in 2023 and have continued building my work around inclusive technical education."
-    },
-    {
-        keywords: ["mentorship", "students", "support"],
-        answer: "I enjoy mentoring learners and helping them build confidence in problem solving, technical thinking, debugging, and professional development."
-    },
-    {
-        keywords: ["future goals", "aspirations", "plans"],
-        answer: "My future goals include developing stronger AI-enhanced learning systems, improving automation workflows, and continuing to grow as a technical educator."
-    },
-    {
-        keywords: ["frameworks", "libraries"],
-        answer: "I have experience with React, Node.js, Express, and frontend development libraries for building dynamic web applications."
-    },
-    {
-        keywords: ["problem solving", "debugging", "critical thinking"],
-        answer: "Problem solving and debugging are central to my teaching approach. I help learners understand how to think through issues logically and independently."
-    },
-    {
-        keywords: ["soft skills", "communication", "teamwork"],
-        answer: "Alongside technical skills, I value communication, empathy, teamwork, clarity, and learner-centred support."
-    },
-    {
-        keywords: ["agile", "workflow", "methodology"],
-        answer: "I use structured workflows and Agile principles to support practical delivery, project planning, and iterative improvement."
-    },
-    {
-        keywords: ["databases", "sql", "data management", "data"],
-        answer: "I teach and support data skills including spreadsheets, data management, SQL, MySQL, and practical data analysis."
-    },
-    {
-        keywords: ["cyber", "cybersecurity", "security"],
-        answer: "I teach cybersecurity awareness, safe digital practice, authentication, secure behaviour, and practical technical security concepts."
-    },
-    {
-        keywords: ["networking", "networks", "packet tracer"],
-        answer: "I teach networking concepts including devices, connectivity, troubleshooting, and practical technical support skills."
-    },
-    {
-        keywords: ["social media", "marketing", "campaign"],
-        answer: "I teach social media marketing, campaign planning, digital graphics, platform choice, audience targeting, and review of campaign materials."
-    },
-    {
-        keywords: ["ai", "automation", "workflow", "chatgpt", "prompt"],
-        answer: "I use AI and automation to support feedback, learner guidance, debugging, workflow design, admin reduction, and more scalable technical education."
-    },
-    {
-        keywords: ["hobbies", "interests", "outside work"],
-        answer: "Outside of work, I enjoy reading fantasy novels, gaming, animals, bioactive tanks, writing, historical sites, and learning new technologies."
-    },
-    {
-        keywords: ["accessibility", "inclusive design"],
-        answer: "I care strongly about accessibility and inclusive design, especially in teaching resources, learner support, and web experiences."
-    },
-    {
-        keywords: ["career highlights", "proudest achievements"],
-        answer: "One of my proudest achievements is helping learners build confidence with technical subjects that initially felt intimidating or out of reach."
-    },
-    {
-        keywords: ["open source", "collaborations"],
-        answer: "I would like to contribute more to open source and collaborative technical education projects."
-    },
-    {
-        keywords: ["testing", "quality assurance", "qa"],
-        answer: "I support learners with testing, debugging, quality checks, evidence gathering, and improving the reliability of their work."
-    },
-    {
-        keywords: ["cabbage"],
-        answer: "Cabbage reminds me of my childhood dinners. I am unsure whether that is a good thing."
-    },
-    {
-        keywords: ["from", "originally", "hometown", "living"],
-        answer: "I am originally from East London, a proper Cockney, and now live near Chester."
-    },
-    {
-        keywords: ["music", "song", "songs"],
-        answer: "I am absolutely an Emo kid at heart. I used to play guitar and sing in a band called Unknown."
-    },
-    {
-        keywords: ["c#", "c sharp"],
-        answer: "I have been learning C# as part of my wider technical development."
-    },
-    {
-        keywords: ["dei", "edi", "equality", "diversity", "trans"],
-        answer: "I care deeply about equality, diversity, inclusion, and creating safer, more supportive routes into tech."
-    },
-    {
-        keywords: ["work environment", "preferred workplace", "remote"],
-        answer: "I work well in collaborative, supportive environments where innovation, structure, and continuous learning are encouraged."
-    },
-    {
-        keywords: ["reading", "books", "favourite books"],
-        answer: "I love fantasy and dark fiction, especially books by Philip Pullman, Raymond E. Feist, Christopher Paolini, and Stephen King."
-    },
-    {
-        keywords: ["travel", "places", "visited"],
-        answer: "I enjoy travelling and have lived or spent time in places including America, Africa, Australia, and Thailand."
-    },
-    {
-        keywords: ["pets", "animals", "favourite animal"],
-        answer: "I love animals and have a particular fondness for cats. I have also cared for dogs, tarantulas, a snake, fish, and bioactive ecosystems."
-    },
-    {
-        keywords: ["challenges", "overcoming obstacles"],
-        answer: "One of my biggest challenges was transitioning into tech and rebuilding my career. It taught me resilience, empathy, and adaptability."
-    },
-    {
-        keywords: ["work-life balance", "self-care"],
-        answer: "I believe in maintaining a healthy work-life balance by setting boundaries and keeping space for creativity, hobbies, and recovery."
-    },
-    {
-        keywords: ["gaming", "video games", "favourites", "favorites"],
-        answer: "I love gaming and especially enjoy Skyrim, Fallout, Red Dead Redemption, and story-rich open world games."
+        answer: "Keira's favourite colour is purple, which also heavily influences the visual identity of this portfolio."
     },
     {
         keywords: ["coffee", "tea", "drinks"],
-        answer: "I do not drink hot drinks. Absolute heathen behaviour, I know."
-    },
-    {
-        keywords: ["life philosophy", "values", "beliefs"],
-        answer: "I value kindness, continuous learning, clarity, creativity, and creating opportunities for others to succeed."
-    },
-    {
-        keywords: ["frankie", "relationship", "wife", "family", "love"],
-        answer: "My nearly-wife is called Frankie. We have been together since 2016. She also works in tech as a software tester."
-    },
-    {
-        keywords: ["author", "memoirs", "vampyr", "daughter", "vampyrs", "published"],
-        answer: "I have written a trilogy of books called Memoirs of a Vampyr's Daughter. Two are currently published."
+        answer: "Keira does not drink hot drinks. A controversial choice, but somehow she survives."
     }
 ];
 
@@ -233,16 +227,14 @@ function createMessage(message, sender = "bot") {
 
     const messageElement = document.createElement("div");
 
-    messageElement.className =
-        sender === "user"
-            ? "user-message"
-            : "bot-message";
+    messageElement.className = sender === "user"
+        ? "user-message"
+        : "bot-message";
 
     messageElement.textContent = message;
 
     responseContainer.innerHTML = "";
     responseContainer.appendChild(messageElement);
-
     responseContainer.scrollTop = 0;
 }
 
@@ -250,7 +242,7 @@ function showIntroMessage() {
     clearResponse();
 
     createMessage(
-        "Hi, I am Keira's portfolio assistant. Ask me about her technical instruction work, AI contributions, projects, skills, books, pets, hobbies, or how to contact her.",
+        "Hi, I am Keira's portfolio assistant. Ask me about her AI workflow systems, technical instruction experience, SEND and DEI work, projects, skills, or something more personal.",
         "bot"
     );
 }
@@ -274,7 +266,7 @@ async function askPortfolioAI(question) {
 }
 
 function getFallbackMessage() {
-    return "I do not have a full AI connection yet, but I can still answer questions about Keira's portfolio, technical instruction work, AI workflows, projects, skills, hobbies, and contact details.";
+    return "I do not have a full AI connection yet, but I can answer questions about Keira's technical instruction work, AI workflows, SEND and DEI experience, projects, skills, hobbies, and contact details.";
 }
 
 async function handleQuestion(question) {
@@ -293,6 +285,7 @@ async function handleQuestion(question) {
     thinkingMessage.textContent = "Thinking...";
 
     if (responseContainer) {
+        responseContainer.classList.add("active");
         responseContainer.appendChild(thinkingMessage);
         responseContainer.scrollTop = 0;
     }
@@ -300,7 +293,6 @@ async function handleQuestion(question) {
     const answer = await askPortfolioAI(cleanQuestion);
 
     clearResponse();
-
     createMessage(answer, "bot");
 }
 
@@ -432,9 +424,17 @@ function showContactForm() {
     const hint = getElement("hint");
     const responseContainer = getElement("response");
 
-    if (optionsContainer) optionsContainer.style.display = "none";
-    if (inputContainer) inputContainer.classList.remove("show-input");
-    if (hint) hint.style.display = "none";
+    if (optionsContainer) {
+        optionsContainer.style.display = "none";
+    }
+
+    if (inputContainer) {
+        inputContainer.classList.remove("show-input");
+    }
+
+    if (hint) {
+        hint.style.display = "none";
+    }
 
     if (responseContainer) {
         responseContainer.classList.add("active");
@@ -461,9 +461,28 @@ function showFunQuestionMode() {
     clearResponse();
 
     createMessage(
-        "Ask me something more personal. Try fun fact, pets, books, gaming, travel, or music.",
+        "Ask me about Keira's background, interests, creative work, wildlife experience, books, gaming, or press randomise for something unexpected.",
         "bot"
     );
+
+    const randomButton = document.createElement("button");
+    randomButton.type = "button";
+    randomButton.id = "random-fact-button";
+    randomButton.textContent = "Randomise Fun Fact";
+
+    randomButton.addEventListener("click", () => {
+
+        const existingMessage = responseContainer.querySelector(".bot-message");
+
+        if (existingMessage) {
+            existingMessage.textContent = getRandomFunFact();
+        }
+
+    });
+
+    if (responseContainer) {
+        responseContainer.appendChild(randomButton);
+    }
 
     if (inputContainer) {
         inputContainer.classList.add("show-input");
