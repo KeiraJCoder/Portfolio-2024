@@ -20,6 +20,7 @@ const revealElements = document.querySelectorAll(`
     .experience-card,
     .modern-project-card,
     .additional-project-card,
+    .exploring-card,
     .stat-card
 `);
 
