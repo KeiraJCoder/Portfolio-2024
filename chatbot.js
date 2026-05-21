@@ -11,7 +11,7 @@ const funFacts = [
 
     "I have hand fed Monkeys",
 
-    "I have swam with Hawksbill Turtles and Southern Stringrays",
+    "I have swum with Hawksbill Turtles and Southern Stringrays",
 
     "I have scuba dived with 4 different types of Shark",
 
@@ -41,8 +41,6 @@ const funFacts = [
 
     "My favourite Doctor is Ten, although Twelve is dangerously close.",
 
-    "I teach AI, software, cybersecurity, networking, data, and digital skills, but I also spend time writing fantasy fiction.",
-
     "I was born and grew up in East London and now live in North Wales.",
 
     "My favourite game worlds are Skyrim, Fallout, Red Dead Redemption 2, and Cyberpunk 2077.",
@@ -55,13 +53,9 @@ const funFacts = [
 
     "I have taught learners from complete beginners through to Level 4 apprenticeships.",
 
-    "I enjoy building structured systems almost as much as I enjoy breaking them apart to improve them.",
-
     "I love musical theatre far more than most people expect.",
 
     "One of my favourite things is helping learners realise they are more capable than they thought they were.",
-
-    "I combine technical education with accessibility-first teaching approaches for mixed-ability learners.",
 
     "I turned a technical portfolio into an interactive AI-assisted experience because a static portfolio felt boring.",
 
